@@ -1,18 +1,15 @@
-# IntelliJ IDEA Community Edition [![official JetBrains project](http://jb.gg/badges/official.svg)](https://github.com/JetBrains/.github/blob/main/profile/README.md)
-These instructions will help you build IntelliJ IDEA Community Edition from source code, which is the basis for IntelliJ Platform development.
-The following conventions will be used to refer to directories on your machine:
-* `<USER_HOME>` is your home directory.
-* `<IDEA_HOME>` is the root directory for the IntelliJ source code.
+# Auto IntelliJ IDEA Community Edition
 
-## Getting IntelliJ IDEA Community Edition Source Code
-IntelliJ IDEA Community Edition source code is available from `github.com/JetBrains/intellij-community` by either cloning or
-downloading a zip file (based on a branch) into `<IDEA_HOME>`. The default is the *master* branch. 
+## Main Features
+- integrate with Auto-X AI Server
+- import legacy systems for fintuning
+- generate technical documets
+- regenerate systems using technical documents
+- auto building, unit testing and bug reporting
+- initial codebase with technical documets
 
-The master branch contains the source code which will be used to create the next major version of IntelliJ IDEA. The branch names
-and build numbers for older releases of IntelliJ IDEA can be found on the page of
-[Build Number Ranges](https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html).
 
-These Git operations can also be done through the [IntelliJ IDEA user interface](https://www.jetbrains.com/help/idea/using-git-integration.html).
+## Getting Source Code
 
 _**Speed Tip:**_ If the complete repository history isn't needed, then using a shallow clone (`git clone --depth 1`) will save significant time.
 
@@ -78,9 +75,6 @@ To run tests on the build, apply these setting to the **Run | Edit Configuration
   * Working dir: `<IDEA_HOME>/bin`
   * VM options: 
     * `-ea` 
- 
-You can find other helpful information at [https://www.jetbrains.com/opensource/idea](https://www.jetbrains.com/opensource/idea).
-The "Contribute Code" section of that site describes how you can contribute to IntelliJ IDEA.
 
 ## Running IntelliJ IDEA on CI/CD environment
 
